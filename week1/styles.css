@@ -1,0 +1,60 @@
+body
+{
+    background-color: rgb(223, 223, 223);
+}
+.togeater, .extra
+{
+    margin-top: 9px;
+    margin-bottom: 9px; 
+    border: 3px ridge rgb(247, 246, 246); 
+}
+.my-pic
+{
+    float: right;
+    margin-top: 20px; 
+    margin-right: 333px;
+    border: 3px ridge rgb(247, 246, 246);
+    padding: 1px;
+    box-shadow: 5px 5px 5px gray;
+} 
+.info
+{
+    font: 19px cursive;
+    text-shadow: 5px 5px 5px gray;
+    padding: 20px;
+    position: relative;
+    margin-top: 25px; 
+    margin-left:333px; 
+}
+h1
+{
+    border-top: 3px groove rgb(205, 228, 205);
+    border-bottom: 3px groove rgb(205, 228, 205);
+    font: italic 23px helvetica; 
+    color: rgb(145, 137, 137);
+    padding-left: 9px;
+    text-shadow: 2px 2px 2px gray;
+}
+span
+{
+    font-style:italic;
+    text-decoration: underline;
+}
+h3 
+{
+    font: 15px cursive;
+}
+.right
+{
+    padding-left: 20px;
+}
+.red
+{
+    color:red;
+}
+h4
+{
+    border-top: 3px groove rgb(205, 228, 205);
+}
+
+
