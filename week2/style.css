@@ -1,0 +1,142 @@
+body 
+{
+      background-image: url(http://kwanty.pl/wp-content/uploads/2015/05/cosmos-328356.jpg);
+      height: 100%;
+      background-position: right top;
+      background-repeat: repeat-y;
+      background-attachment: fixed;
+      color: rgb(175, 174, 175)
+}
+h1:hover { 
+       background-color: rgb(48, 64, 77);
+    }  
+h1:active {
+       background-color: rgb(48, 64, 77);
+    } 
+h1:focus {
+       background-color: rgb(48, 64, 77);
+    } 
+    h1
+    {
+        position: relative;
+        text-align: center;
+        font:italic bold 90px cursive;
+        animation: shadow 3s ease-in-out infinite;
+        border: 5px groove rgb(97, 109, 148);
+        border-radius: 33px;
+        letter-spacing: 9px;
+    }
+@keyframes shadow
+    {
+        0% {text-shadow: 9px 2px 3px rgb(85, 82, 82), 0 0 25px blue, 0 0 5px darkblue;}
+        50% {text-shadow: -9px 2px 3px rgb(85, 82, 82), 0 0 25px blue, 0 0 5px darkblue;}
+        100% {text-shadow: 9px 2px 3px rgb(85, 82, 82), 0 0 25px blue, 0 0 5px darkblue;}
+    }
+   h2
+   {
+        position: relative; 
+        font:italic bold 55px cursive;
+        text-shadow: 5px 2px 3px rgb(85, 82, 82), 0 0 25px blue, 0 0 5px darkblue;
+        animation: marquee 19s linear infinite;
+   }
+@keyframes marquee 
+    {
+        100%   { transform: translate(-50%, 0); }
+        0% { transform: translate(100%, 0); }
+        
+   }
+   section 
+   {
+         margin-bottom:10%
+   }
+   img 
+   {
+	      width:150px;
+	      height:150px;
+    }
+
+    h3 , p 
+    {
+          font-family: cursive;
+          border: 5px groove rgb(97, 109, 148);
+    }
+    #grid-floats , #grid-flex
+    {
+          border: 5px groove rgb(97, 109, 148); 
+    }
+    #grid-floats li:nth-child(1)
+    {
+	        width:50%;
+           height:25em; }
+    
+
+   .grid-item
+   {
+          background-color: rgb(48, 64, 77);
+          border: 5px groove rgb(97, 109, 148);
+          overflow: auto;
+   }
+
+   
+
+    #grid-floats .grid-item 
+    {
+	     float:left;
+	     height:25em;
+         width:20%;
+         margin:5px;
+	}
+    #grid-floats::after{
+        content: "";
+        clear: both;
+        display:block;
+     }
+    #grid-flex
+    {
+	     display: flex;
+	     flex-wrap: wrap;      
+	}
+
+    #grid-flex .grid-item 
+    {
+        width:20%;
+        margin:9px;
+    }
+	  
+    #grid-flex li:nth-child(1)
+    {
+	    width:50%;
+	    height:22em;
+	}                            
+  
+    @media only screen and (min-width: 600px) {
+    li:first-child 
+    {
+         width:80%;
+    }
+    .grid-item img {
+          width: 100%;
+    }
+    .grid-item 
+    {
+           height: 350px;
+            overflow: auto;
+    }
+      }
+
+    @media only screen and (min-width: 768px) {
+    li:first-child {
+           width:60%;
+    }
+
+        
+
+    .grid-item img {
+            width: 100%;
+    }
+
+    .grid-item {
+              height: 350px;
+              overflow: auto;
+    }
+}
